@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign</title>
+
+</head>
+<body>
+<form action="/predecir/" method="post">
+    {% csrf_token %}
+    <p>Edad:
+        <input type="number" name="age">
+    </p>
+    <p>Tipo Trabajo:
+        <input type="radio" name="job" value="admin"> Administrador
+        <input type="radio" name="job" value="unknown"> Desconocido
+        <input type="radio" name="job" value="unemployed"> Desempleado
+        <input type="radio" name="job" value="management"> Gerente
+        <input type="radio" name="job" value="housemaid"> Mucama
+        <input type="radio" name="job" value="entrepreneur"> Empresario
+        <input type="radio" name="job" value="student"> Estudiante 
+        <input type="radio" name="job" value="blue-collar"> Obrero
+        <input type="radio" name="job" value="self-employed"> Autónomo
+        <input type="radio" name="job" value="retired"> Jubilado
+        <input type="radio" name="job" value="technician"> Técnico
+        <input type="radio" name="job" value="services"> Servicio
+    </p>
+    <p>Estado civil:
+        <input type="radio" name="marital" value="single"> Soltero(a)
+        <input type="radio" name="marital" value="married"> Casado(a)
+        <input type="radio" name="marital" value="divorced"> Divorciado(a)/Viduo(a)
+        <input type="radio" name="marital" value="single"> Soltero(a)
+    </p>
+    <p>Educación:
+        <input type="radio" name="education" value="primary"> Primaria
+        <input type="radio" name="education" value="secondary"> Secundaria
+        <input type="radio" name="education" value="tertiary"> Tercer Nivel
+        <input type="radio" name="education" value="unknown"> Desconocido
+    </p>
+    <p>Crédito en default:
+        <input type="radio" name="default" value="yes">Si
+        <input type="radio" name="default" value="no">No
+    </p>
+    <p>Valor Balance:
+        <input type="number" name="balance" >
+    </p>
+    <p>Préstamo de vivienda:
+        <input type="radio" name="housing" value="yes">Si
+        <input type="radio" name="housing" value="no">No
+    </p>
+    <p>Préstamo personal:
+        <input type="radio" name="loan" value="yes">Si
+        <input type="radio" name="loan" value="no">No
+    </p>
+    <p>Tipo contacto:
+        <input type="radio" name="contact" value="telephone">Teléfono
+        <input type="radio" name="contact" value="cellular">Celular
+        <input type="radio" name="contact" value="unknown">Desconocido
+    </p>
+    <p>Día del ultimo contacto:
+        
+        <select name="day">
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+            <option value="4">4</option> 
+            <option value="5">5</option> 
+            <option value="6">6</option> 
+            <option value="7">7</option> 
+            <option value="8">8</option> 
+            <option value="9">9</option> 
+            <option value="10">10</option> 
+            <option value="11">11</option> 
+            <option value="12">12</option> 
+            <option value="13">13</option> 
+            <option value="14">14</option> 
+            <option value="15">15</option> 
+            <option value="16">16</option> 
+            <option value="17">17</option> 
+            <option value="18">18</option> 
+            <option value="19">19</option> 
+            <option value="20">20</option> 
+            <option value="21">21</option> 
+            <option value="22">22</option> 
+            <option value="23">23</option> 
+            <option value="24">24</option> 
+            <option value="25">25</option> 
+            <option value="26">26</option> 
+            <option value="27">27</option> 
+            <option value="28">28</option> 
+            <option value="29">29</option> 
+            <option value="30">30</option> 
+            <option value="31">31</option> 
+         </select>
+    </p>
+    <p>Mes del ultimo contacto:
+        <input type="number" name="month" value="month">
+    </p>
+    <p><input type="submit" value="PREDECIR"></p>
+</form>
+</body>
+</html>
